@@ -48,6 +48,7 @@ $Params = @{
     RemoveAppx = "CommunicationsApps","OfficeHub","People","Skype","Solitaire","Xbox","ZuneMusic","ZuneVideo"
     UpdateDrivers = $true
     UpdateWindows = $true
+    AddNetFX3 = $true
 }
 Start-OOBEDeploy @Params
 #================================================
