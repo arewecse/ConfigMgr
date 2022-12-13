@@ -17,8 +17,8 @@ $Params = @{
     OSEdition = "Pro"
     OSLanguage = "en-us"
     OSLicense = "Retail"
-    SkipAutopilot = $true
-    SkipODT = $true
+    SkipAutopilot = $false
+    SkipODT = $false
 }
 Start-OSDCloud @Params
 #================================================
