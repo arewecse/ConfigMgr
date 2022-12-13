@@ -31,9 +31,10 @@ Import-Module AutopilotOOBE -Force
 
 $Params = @{
     Title = 'CSI Compressco Autopilot Registration'
+    $AssignedComputerName = 'CSI-' + ((Get-CimInstance -ClassName Win32_BIOS).SerialNumber).Trim()
     GroupTag = 'Enterprise'
     GroupTagOptions = 'Development','Enterprise'
-    Hidden = 'AddToGroup','AssignedComputerName','AssignedUser','PostAction'
+    Hidden = 'AddToGroup','AssignedUser','PostAction'
     Assign = $true
     Run = 'NetworkingWireless'
     Docs = 'https://autopilotoobe.osdeploy.com/'
