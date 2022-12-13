@@ -14,6 +14,7 @@ Import-Module OSD -Force
 #================================================
 $Params = @{
     OSBuild = "22H2"
+    OSVersion = "Windows 10"
     OSEdition = "Pro"
     OSLanguage = "en-us"
     OSLicense = "Retail"
